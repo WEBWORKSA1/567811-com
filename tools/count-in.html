@@ -1,0 +1,39 @@
+---
+layout: "default"
+title: "Dance Count-In Metronome (5-6-7-8) with Tap Tempo | 567811"
+description: "Free online dance metronome: 40–220 BPM, tap tempo, 5-6-7-8 count-in, voice counts and 8-count visualiser."
+root: "../"
+canon: "https://webworksa1.github.io/567811-com/tools/count-in.html"
+ld: "[{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"567811\",\"url\":\"https://webworksa1.github.io/567811-com/\"},{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"567811\",\"url\":\"https://webworksa1.github.io/567811-com/\",\"logo\":\"https://webworksa1.github.io/567811-com/assets/img/icon.svg\"},{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"567811 Count-In Metronome\",\"applicationCategory\":\"MusicApplication\",\"operatingSystem\":\"Any\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"}}]"
+tools: true
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Home</a> / <a href="../tools/index.html">Tools</a> / Count-In</div><span class="eyebrow">Tool</span><h1 style="font-size:clamp(2rem,5vw,3.4rem)">Count-In Metronome</h1><p class="lead">Set your BPM, hit start, and get a “5, 6, 7, 8” count-in before every run. Accents on 1 and 5.</p></div></section>
+<section style="padding-top:10px"><div class="wrap layout">
+<div id="metro" class="tool">
+<div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap">
+<div><div class="bpm grad" id="bpm" aria-live="polite">120</div><div class="mute">BPM</div></div>
+<div class="center"><div id="metro-now" style="font:800 1.6rem var(--hf)">Ready</div><div class="small dim">Space = start/stop · T = tap · ↑↓ = BPM</div></div>
+</div>
+<input type="range" id="bpm-range" min="40" max="220" value="120" aria-label="Tempo in BPM" style="margin:20px 0">
+<div class="ctrl" style="margin-bottom:16px">
+<button class="btn ghost sm" data-bpm-step="-5">−5</button><button class="btn ghost sm" data-bpm-step="-1">−1</button><button class="btn ghost sm" data-bpm-step="1">+1</button><button class="btn ghost sm" data-bpm-step="5">+5</button>
+<span class="dim small">Presets:</span><button class="btn ghost sm" data-bpm-set="70">Ballad 70</button><button class="btn ghost sm" data-bpm-set="95">Hip hop 95</button><button class="btn ghost sm" data-bpm-set="120">Pop 120</button><button class="btn ghost sm" data-bpm-set="128">EDM 128</button><button class="btn ghost sm" data-bpm-set="180">Salsa 180</button>
+</div>
+<div class="beats" style="box-shadow:none;padding:0;border:0;background:none"><div class="row"><div class="beat">1</div><div class="beat">2</div><div class="beat">3</div><div class="beat">4</div><div class="beat">5</div><div class="beat">6</div><div class="beat">7</div><div class="beat">8</div></div></div>
+<div class="ctrl" style="margin-top:20px">
+<button class="btn lg" id="play" aria-pressed="false">▶ Start</button><button class="btn ghost lg" id="tap">Tap tempo</button>
+</div>
+<div class="ctrl" style="margin-top:18px;gap:18px">
+<label class="chk"><input type="checkbox" id="opt-countin" checked> 5-6-7-8 count-in</label>
+<label class="chk"><input type="checkbox" id="opt-voice"> Voice counts</label>
+<label class="chk"><input type="checkbox" id="opt-and"> “&” counts</label>
+<label class="chk"><input type="checkbox" id="opt-accent" checked> Accent on 5</label>
+</div>
+</div>
+<aside class="aside"><div class="sticky">
+<div class="card"><h3>How to practise</h3><ol class="small mute" style="padding-left:18px"><li>Find the song's BPM with Tap tempo.</li><li>Drop 20–30 BPM and drill each 8-count.</li><li>Add 5 BPM per clean run until you hit full speed.</li></ol></div>
+<div class="card"><h3>Prepping a performance?</h3><p class="small">Get a pro to choreograph it.</p><a class="btn sm" href="../get-matched.html">Get matched free</a></div>
+<div class="ad"><div class="box" data-slot="sidebar"></div></div>
+</div></aside>
+</div></section><div class="ad"><div class="box" data-slot="inContent"></div></div>
+<section class="sec-alt"><div class="wrap prose"><h2>What BPM is my song?</h2><p>Tap along with the beat 4–8 times and the metronome locks to it. Most pop sits at 100–130 BPM, hip hop at 85–100, Bollywood dance tracks at 95–130 and salsa at 160–220 (dancers often count salsa in “slow” 8s).</p><h2>Why accent 1 and 5?</h2><p>An 8-count is two bars of 4/4. Beat 1 starts the phrase and beat 5 starts its second half — accenting both keeps you oriented, exactly how a teacher counts out loud.</p></div></section>
