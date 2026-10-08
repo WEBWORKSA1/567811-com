@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_gen/
+Disallow: /project-docs/
+Sitemap: https://webworksa1.github.io/567811-com/sitemap.xml

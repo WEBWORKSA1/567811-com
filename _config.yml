@@ -1,0 +1,5 @@
+title: "567811 — Count In. Dance On."
+baseurl: "/567811-com"
+url: "https://webworksa1.github.io"
+exclude: [README.md, project-docs/, _gen/, .gitignore]
+include: [ads.txt, site.webmanifest]

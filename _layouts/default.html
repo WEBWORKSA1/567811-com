@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ page.canon }}">
+<meta name="theme-color" content="#0d0b16">
+<meta property="og:type" content="{{ page.ogtype | default: 'website' }}"><meta property="og:site_name" content="567811">
+<meta property="og:title" content="{{ page.title }}"><meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ page.canon }}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="{{ page.root }}assets/img/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ page.root }}site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+<script type="application/ld+json">{{ page.ld }}</script>
+</head>
+<body data-root="{{ page.root }}"{% if page.noexit %} data-no-exit{% endif %}>
+<a class="skip" href="#main">Skip to content</a>
+<div class="pbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership → <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="hdr"><div class="wrap">
+<a class="logo" href="{{ page.root }}index.html" aria-label="567811 home"><span class="mk">5678</span><span>567811<small>Count in · Dance on</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><a href="{{ page.root }}learn.html">Learn</a><a href="{{ page.root }}tools/index.html">Tools</a><a href="{{ page.root }}videos.html">Videos</a><a href="{{ page.root }}guides/index.html">Guides</a><a href="{{ page.root }}contests.html">Contests</a><a href="{{ page.root }}for-pros.html">For Pros</a><a href="{{ page.root }}donate.html">Donate</a><a class="btn sm" href="{{ page.root }}get-matched.html">Get Matched</a></nav>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="ftr"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="{{ page.root }}index.html"><span class="mk">5678</span><span>567811<small>Count in · Dance on</small></span></a>
+<p class="mute small" style="margin-top:14px">Free dance tools, tutorials and a matching service that connects people with choreographers, studios and teachers worldwide.</p>
+<form data-form="newsletter" data-subject="Newsletter signup" class="news" aria-label="Newsletter"><input type="email" name="email" placeholder="Your email" required aria-label="Email"><button class="btn sm" type="submit">Join</button></form>
+<p class="small dim" style="margin-top:8px">Weekly: 1 tutorial, 1 tool tip, 1 challenge. Unsubscribe anytime.</p></div>
+<div><h4>Dance</h4><ul><li><a href="{{ page.root }}learn.html">11 Styles</a></li><li><a href="{{ page.root }}videos.html">Video tutorials</a></li><li><a href="{{ page.root }}guides/index.html">Guides</a></li><li><a href="{{ page.root }}tools/count-in.html">Count-In Metronome</a></li><li><a href="{{ page.root }}tools/style-quiz.html">Style Quiz</a></li></ul></div><div><h4>Hire & Earn</h4><ul><li><a href="{{ page.root }}get-matched.html">Get matched (free)</a></li><li><a href="{{ page.root }}tools/budget.html">Dance budget estimator</a></li><li><a href="{{ page.root }}for-pros.html">For studios & pros</a></li><li><a href="{{ page.root }}studios.html">List your studio</a></li><li><a href="{{ page.root }}auditions.html">Auditions board</a></li></ul></div><div><h4>567811</h4><ul><li><a href="{{ page.root }}about.html">About</a></li><li><a href="{{ page.root }}the-567811-story.html">The 567811 story</a></li><li><a href="{{ page.root }}contests.html">11-Count Challenge</a></li><li><a href="{{ page.root }}advertise.html">Advertise</a></li><li><a href="{{ page.root }}careers.html">Careers</a></li><li><a href="{{ page.root }}donate.html">Support us</a></li><li><a href="{{ page.root }}contact.html">Contact</a></li></ul></div>
+</div>
+<div class="legal">© <span data-year></span> 567811. “567811” is used as a descriptive numeral (the dance count-in “5, 6, 7, 8” + “1, 1”); no affiliation with any business using “5678” or similar marks. Third-party names and videos belong to their owners. <a href="{{ page.root }}legal.html">Trademark & copyright</a> · <a href="{{ page.root }}privacy.html">Privacy</a> · <a href="{{ page.root }}terms.html">Terms</a> · <a href="https://web.works/contact" target="_blank" rel="noopener">Buy / sponsor this domain</a></div>
+</div></footer>
+<div class="mcta"><a class="btn" href="{{ page.root }}get-matched.html">Get matched with a choreographer — free</a></div>
+<div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lm-h"><div class="form-card">
+<button class="x" aria-label="Close">×</button>
+<span class="eyebrow">Free · 60 seconds</span><h2 id="lm-h" style="font-size:1.6rem">Before you go — want up to 3 quotes from top choreographers?</h2>
+<form data-form="lead-quick" data-subject="Quick lead (modal)">
+<div class="row2"><div class="f"><label for="lm-n">Name</label><input id="lm-n" name="name" required autocomplete="name"></div>
+<div class="f"><label for="lm-e">Email</label><input id="lm-e" type="email" name="email" required autocomplete="email"></div></div>
+<div class="row2"><div class="f"><label for="lm-p">Phone / WhatsApp</label><input id="lm-p" name="phone" type="tel" autocomplete="tel"></div>
+<div class="f"><label for="lm-c">City</label><input id="lm-c" name="city" required autocomplete="address-level2"></div></div>
+<div class="f"><label for="lm-o">What do you need?</label><select id="lm-o" name="occasion" required><option value="">Choose…</option><option>Sangeet / wedding performances</option><option>Wedding first dance</option><option>Corporate / flash mob</option><option>Private lessons</option><option>Kids' classes</option><option>Dance fitness</option><option>Other</option></select></div>
+<label class="chk"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about my request and accept the <a href="{{ page.root }}privacy.html">privacy policy</a>.</label>
+<button class="btn" type="submit" style="width:100%;margin-top:14px">Get my free quotes</button>
+</form></div></div>
+<script src="{{ page.root }}assets/js/config.js"></script><script src="{{ page.root }}assets/js/app.js" defer></script>{% if page.tools %}<script src="{{ page.root }}assets/js/tools.js" defer></script>{% endif %}
+</body>
+</html>
